@@ -7,6 +7,9 @@
       <div class="menu-trigger">menu</div>
     {{ end }}
   </div>
+  <div class='subtitle'>
+      {{ $.Site.Params.subtitle }}
+  </div>
   {{ if len $.Site.Menus }}
     {{ partial "menu.html" . }}
   {{ end }}
